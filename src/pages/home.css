@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-weight: 400;
+    font-size: 54px;
+}
+h2{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.row{
+    width: 100%;
+}
+.col{
+    margin-top: 2%;
+    float:left;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.col1{
+    min-width: 80%;
+}
+.col2{
+    min-width:20%;
+    
+}
+
+.left{
+    margin-left:0%;
+    margin-right: 2%;
+    
+}
+.right{
+    margin-left: 2%;
+    margin-right: 0%;
+}
+
+.upper1{
+    width: 60%;
+    min-width: 60%;
+
+}
+
+.upper2{
+    width: 26%;
+    min-width: 26%;
+}
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; 
+    height:auto;
+    max-width: 1400px;
+}
+
+.bottom{
+    width: 40%;
+    min-width: 40%;
+}
+.searchform{
+    width: 100%;
+   font-size: 32px;
+    border: 3px solid black;
+   
+}
+
+input[type=button]{
+    width: 50%;
+    color: white;
+    font-size: 24px;
+    background-color: #2a7f62;
+    border: white;
+    border-radius: 45%;
+    margin: 2% 2%;
+    padding: 5% 5%;
+    cursor: pointer;
+
+}
+
+::placeholder { 
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+  }
