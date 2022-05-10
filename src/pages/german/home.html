@@ -8,7 +8,7 @@
     <body>
         <header>
             <nav>
-                <ul>
+                <ul class="nav-bar">
                     <li>
                         <a href="about-us.html">Über Uns</a>
                     </li>
@@ -18,34 +18,35 @@
                     
                     <li><div>
                         <button>Sprache</button>
-                        <a href="../english/home.html">English</a>
+                        <a href="../english/home.html">Englisch</a>
                         <a href="#logo">Deutsch</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div class="row logo">
-                <img src="../../images/logo.png" wdith="700" height="300">
+            <div class="center row">
+                <img class="logo center" src="../../images/logo.png" width="50%"><br/>
+                <h2>Ihre Ferienwohnung in Mannheim</h2>
             </div>
-            <form class="row search">
-                <span>
+            <form class="row center flex search" display: inline-flex>
+                <div class="district">
                     <label>Stadtteil: </label> <br/>
-                    <input type="text" placeholder="Wo in Mannheim willst du wohnen?"/>
-                </span>
+                    <input class="searchform" type="text" placeholder="Wo in Mannheim willst du wohnen?"/>
+                </div>
                 
-                <span>
+                <div class="guests">
                     <label>Gäste: </label><br/>
-                    <input type="number" placeholder="Wieviele seid ihr?"/>
-                </span>
-                <span>
+                    <input class="searchform" type="number" placeholder="Wieviele seid ihr?"/>
+                </div>
+                <div class="date">
                     <label>Anreise: </label><br/>
-                    <input type="date" placeholder="Wann wollen Sie ankommen?"/>
-                </span>
-                <span>
+                    <input class="searchform" type="text" placeholder="Wann wollen Sie ankommen?"/>
+                </div>
+                <div class= "date">
                     <label>Abreise: </label><br/>
-                    <input type="date" placeholder="Wann wollen Sie abreisen?"/>
-                </span>
+                    <input class="searchform" type="text" placeholder="Wann wollen Sie abreisen?"/>
+                </div>
                 <input type="submit" value="Suchen">
 
             </form>
