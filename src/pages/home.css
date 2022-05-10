@@ -7,17 +7,31 @@
     margin: 0;
     padding: 0;;
 }
+html, body{
+
+    height: 100%;
+
+}
 body{
+    display: flex;
+    flex-direction: column;
     font-family: 'Open Sans', sans-serif;
     color: black;
     font-weight: 300;
     font-size: 16px;
+
 }
 
 header{
     background-color: #d9d3d3;
+    color: black;
     width: 100%;
+    min-height: 20px;
+    margin-bottom: 50px;
+}
 
+main{
+    height: 95%;
 }
 
 
@@ -31,7 +45,7 @@ nav li{
 }
 nav a{
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
 h1{
@@ -54,10 +68,11 @@ label{
 }
 
 .row{
-    width: 60%;
+    width: 50%;
+    margin: 10px;
 }
 .center{
-    
+    display: block;
    margin-left: auto;
    margin-right: auto;
 }
@@ -77,12 +92,12 @@ label{
 
 }
 .district{
-    width: 69%;
-    width: calc(70% - var(--gap));
+    width: 64%;
+    width: calc(65% - var(--gap));
 }
 .guests{
-    width: 29%;
-    width: calc(30% - var(--gap))
+    width: 34%;
+    width: calc(35% - var(--gap))
 }
 
 .date{
@@ -94,16 +109,17 @@ label{
     width: 100%;
     font-size: 16px;
     margin-bottom: 10px;
+    padding: 5 2;
 }
 
 
 input[type=button], input[type=submit]{
-    width: calc(100%-20px);
+    width: calc(100% - var(--gap) + 2px);
     color: white;
     font-size: 29px;
     font-weight: 300;
     background-color: #2a7f62;
-    border: none;
+    border: 2px solid #2a7f62;
     cursor: pointer;
 
 }
@@ -111,4 +127,12 @@ input[type=button], input[type=submit]{
 ::placeholder { 
     color: black;
     opacity: 1; /* Firefox */
+  }
+
+  footer{
+      background-color: #740000;
+      color: white;
+      width: 100%;
+      margin-top: auto;
+      margin-bottom: 0;
   }
