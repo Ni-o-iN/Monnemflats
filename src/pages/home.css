@@ -57,7 +57,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: inherit;
-    padding: 10px;
+    padding: 10px 10px 10px;
 }
 
 header nav a:hover {
@@ -79,6 +79,7 @@ header nav a:hover {
     font-size: inherit;
     font-weight: inherit;
     border: none;
+    margin-bottom: 5px;
 
 }
 
