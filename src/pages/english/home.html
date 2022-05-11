@@ -1,35 +1,51 @@
 <!DOCTYPE html>
+
 <html>
+
     <head>
         <title>Monnemflats - Home</title>
         <link rel="stylesheet" href="../home.css">
         <meta charset="utf-8">
     </head>
+
     <body>
         <header>
             <nav>
                 <ul class="nav-bar">
+                    <li style="float:left; display: none;">
+                        <a href="home.html"><img src="../../images/logo/logo_header.png" width="70px" height="30px"/>
+                        </a>
+                    </li>
+
                     <li>
                         <a href="about-us.html">About Us</a>
                     </li>
+
                     <li>
                         <a href="contact.html">Contact</a>
                     </li>
-                    
-                    <li><div>
-                        <button>Language</button>
-                        <a href="">English</a>
-                        <a href="../german/home.html">German</a>
+
+                    <li style="float:right;">
+                        <div class="dropdown">
+                            <button class="dropdown-button">
+                            <img src="../../images/icons/lang-globe.png" alt="Sprache"width="30px" height="30px"></button>
+                            <div class="dropdown-content">
+                                <a href="../german/home.html">German</a>
+                                <a href="">English</a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </nav>
         </header>
+
         <main>
             <div class="center row">
-                <img class="logo center" src="../../images/logo.png" width="50%"><br/>
-                <h2>Your vacation apartment in Mannheim</h2>
+                <img class="logo center" src="../../images/logo/logo.png" width="50%">
+                <h2 class="center claim">Your vacation apartment in Mannheim</h2>
             </div>
-            <form class="row center flex search" display: inline-flex>
+
+            <form class="row center flex" display: inline-flex>
                 <div class="district">
                     <label>District: </label> <br/>
                     <input class="searchform" type="text" placeholder="Where do you want to live?"/>
@@ -48,12 +64,18 @@
                     <input class="searchform" type="text" placeholder="When do you want to live?"/>
                 </div>
                 <input type="submit" value="Search">
-
             </form>
-
-
-            
         </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="imprint.html">Imprint</a></li>
+                    <li>|</li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                </ul>
+            </nav>
+        </footer>
             
     </body>
 
