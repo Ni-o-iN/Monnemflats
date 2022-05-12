@@ -4,9 +4,6 @@
     ;
 }
 
-:root {
-    --gap: 20px;
-}
 
 html,
 body {
@@ -99,6 +96,14 @@ header nav a:hover {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.left{
+    float:left;
+}
+
+.right{
+    float: right;
 }
 
 footer {
