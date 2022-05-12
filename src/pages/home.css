@@ -4,7 +4,7 @@
 * {
     margin: 0;
     padding: 0;
-    ;
+    box-sizing: border-box;
 }
 
 :root {
@@ -33,53 +33,46 @@ header {
     color: black;
     font-size: 24px;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 10px;
     margin-bottom: 50px;
+    border: none;
    
     
 }
 
-nav ul {
-    text-align: center;
-    list-style: none;
+nav  {
     display: flex;
     justify-content: center;
+    align-content: stretch;
     gap: 20px;
 }
 
 
-
-nav li {
+.header-item:first-child{
     margin-left: auto;
-    display: inline-block;
 }
 
-nav li:nth-child(2) {
+.header-item:nth-child(2) {
     margin: 0;
-}   
-
-nav li:last-child{
-    align-self: flex-end;
-    margin-left: auto;
-    margin-right: 0;
 }
+
 
 
 nav a {
     text-decoration: none;
     color: inherit;
-    padding: 0px 10px 10px;
+    padding: 0px 10px;
 }
 
 
 
-header nav a:hover {
+.header-item:hover {
     background-color: #efeded;
-    ;
 }
 
 .dropdown {
-
+    margin-left: auto;
+    margin-right: 0;
     position: relative;
     float: right;
     padding-right: 15px;
@@ -97,6 +90,7 @@ header nav a:hover {
 
 .dropdown-content a {
     display: block;
+    padding: 10px;
 }
 
 
@@ -115,9 +109,22 @@ footer {
     font-size: 24px;
 }
 
-footer nav a:hover {
+.footer-demarker{
+    margin: 0;
+}
+
+.footer-item:hover {
     background-color: #9d4c4c;
     ;
+}
+
+.footer-item:first-child{
+    margin-right: 0;
+    margin-left: auto;
+}
+.footer-item:last-child{
+    margin-right: auto;
+    margin-left: 0;
 }
 
 h1 {

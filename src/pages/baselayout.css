@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
-
 * {
     margin: 0;
     padding: 0;
-    ;
+    box-sizing: border-box;
 }
 
 :root {
@@ -33,55 +30,52 @@ header {
     color: black;
     font-size: 24px;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 10px;
     margin-bottom: 50px;
+    border: none;
    
     
 }
 
-nav ul {
-    text-align: center;
-    list-style: none;
+nav  {
     display: flex;
     justify-content: center;
+    align-content: stretch;
     gap: 20px;
 }
 
-
-
-nav li {
-    margin-left: auto;
-    display: inline-block;
-    padding-bottom: 10px;
-}
-
-nav li:nth-child(3) {
-    margin: 0;
-}   
-
-nav li:first-child(){
-    margin-left: 0;
+.logo{
     margin-right: auto;
 }
-nav li:last-child{
-    margin-left: auto;
-    margin-right: 0;
+
+.logo:hover{
+    background-color: #efeded;
 }
+.header-item:first-child{
+    margin-left: auto;
+}
+
+.header-item:nth-child(2) {
+    margin: 0;
+}
+
 
 
 nav a {
     text-decoration: none;
     color: inherit;
+    padding: 0px 10px;
 }
 
 
-header nav a:hover {
+
+.header-item:hover {
     background-color: #efeded;
-    ;
 }
 
 .dropdown {
-
+    margin-left: auto;
+    margin-right: 0;
     position: relative;
     float: right;
     padding-right: 15px;
@@ -99,6 +93,7 @@ header nav a:hover {
 
 .dropdown-content a {
     display: block;
+    padding: 10px;
 }
 
 
@@ -117,21 +112,20 @@ footer {
     font-size: 24px;
 }
 
-footer nav a:hover {
+.footer-demarker{
+    margin: 0;
+}
+
+.footer-item:hover {
     background-color: #9d4c4c;
     ;
 }
 
-h1 {
-    font-family: 'Open Sans', sans-serif;
-    color: black;
-    font-weight: 400;
-    font-size: 32px;
+.footer-item:first-child{
+    margin-right: 0;
+    margin-left: auto;
 }
-
-h2 {
-    font-family: 'Open Sans', sans-serif;
-    color: black;
-    font-weight: 400;
-    font-size: 28px;
+.footer-item:last-child{
+    margin-right: auto;
+    margin-left: 0;
 }
