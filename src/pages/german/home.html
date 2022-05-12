@@ -15,15 +15,13 @@
                     <li>
                         <a href="contact.html">Kontakt</a>
                     </li>
-                    <li style="float:right;">
-                        <div class="dropdown">
-                            <button class="dropdown-button">
-                            <img src="../../images/icons/lang-globe.png" alt="Sprache"width="30px" height="30px"></button>
+                    <li class="dropdown">
+                           
+                            <img src="../../images/icons/lang-globe.png" alt="Sprache"width="30px" height="30px">
                             <div class="dropdown-content">
                                 <a href="../english/home.html">Englisch</a>
                                 <a href="">Deutsch</a>
                             </div>
-                        </div>
 
                     </li>
                 </ul>
@@ -34,23 +32,23 @@
                 <img class="logo center" src="../../images/logo/logo.png" width="50%">
                 <h2 class="center claim">Ihre Ferienwohnung in Mannheim</h2>
             </div>
-            <form class="row center flex" display: inline-flex>
-                <div class="district">
+            <form class="row center flex" name="searchform" display: inline-flex onsubmit="validateForm()">
+                <div class="district" >
                     <label>Stadtteil: </label> <br/>
-                    <input class="searchform" type="text" placeholder="Wo wollen Sie leben?"/>
+                    <input class="searchinput"  name="district" type="text" placeholder="Wo wollen Sie leben?"/>
                 </div>
                 
                 <div class="guests">
                     <label>Gäste: </label><br/>
-                    <input class="searchform" type="number" placeholder="Wie viele Gäste sind Sie?"/>
+                    <input class="searchinput" name="guests" type="number" placeholder="Wie viele Gäste sind Sie?"/>
                 </div>
                 <div class="date">
                     <label>Anreise: </label><br/>
-                    <input class="searchform" type="text" placeholder="Wann wollen Sie ankommen?"/>
+                    <input class="searchinput" name="arrival" type="text" placeholder="Wann wollen Sie ankommen?"/>
                 </div>
                 <div class= "date">
                     <label>Abreise: </label><br/>
-                    <input class="searchform" type="text" placeholder="Wann wollen Sie abreisen?"/>
+                    <input class="searchinput" name="departure" type="text" placeholder="Wann wollen Sie abreisen?"/>
                 </div>
                 <input type="submit" value="Suchen">
 
@@ -67,5 +65,45 @@
         </footer>
             
     </body>
+
+    <script>
+        function validateForm(){
+            let district = document.querySelector("input[name='district']").value;
+            let districtValid = checkDistrict();
+            let guest = document.querySelector("input[name='guests']").value;
+            let arrival = document.querySelector("input[name='arrival']").value;
+            let departure = document.querySelector("input[name='departure']").value;
+
+            
+                
+
+        }
+
+        function checkDistrict( district){
+            if(typeof district == "string"){
+
+                let valid = new RegExp("[A-Za-z]")
+
+                let spaceIsFirstChar = new RegExp("^\s"); 
+                let multipleSpace = new RegExp("\s{2}");
+                let numbers = new RegExp("[0-9]");
+                let 
+
+
+                if(spaceIsFirstChar.test(district)){
+                    return "Eingabe darf nicht mit einem Leerzeichen beginnen";
+                }
+                if(multipleSpace.test(district)){
+                    return "Eingabe darf keine zusammenhängende Leerzeichen besitzen";
+                }
+                if(numbers.test(district)){
+                    return "Eingabe darf keine Leerzeichen enthalten";
+                }
+
+            }
+        
+
+        }
+    </script>
 
 </html>

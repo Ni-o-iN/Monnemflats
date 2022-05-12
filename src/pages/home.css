@@ -33,32 +33,45 @@ header {
     color: black;
     font-size: 24px;
     width: 100%;
-    min-height: 20px;
+    padding-top: 20px;
     margin-bottom: 50px;
-    padding: 10px 0px;
    
     
 }
 
-main {
-    height: 95%;
-}
-
-
 nav ul {
     text-align: center;
     list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
+
+
 nav li {
+    margin-left: auto;
     display: inline-block;
 }
+
+nav li:nth-child(2) {
+    margin: 0;
+}   
+
+nav li:last-child{
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+}
+
 
 nav a {
     text-decoration: none;
     color: inherit;
-    padding: 10px 10px 10px;
+    padding: 0px 10px 10px;
 }
+
+
 
 header nav a:hover {
     background-color: #efeded;
@@ -73,17 +86,6 @@ header nav a:hover {
 
 }
 
-.dropdown-button {
-    background-color: inherit;
-    font-family: "Open Sans", sans-serif;
-    font-size: inherit;
-    font-weight: inherit;
-    border: none;
-    margin-bottom: 5px;
-
-}
-
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -95,7 +97,6 @@ header nav a:hover {
 
 .dropdown-content a {
     display: block;
-    text-align: right;
 }
 
 
@@ -149,6 +150,10 @@ label {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.right {
+    float: right;
 }
 
 .logo {
@@ -205,9 +210,13 @@ input[type=submit] {
 
 }
 
-::placeholder {
+[placeholder] {
+    
+    text-overflow: ellipsis;
+}
+
+input::placeholder{
     color: black;
-    opacity: 1;
-    /* Firefox */
+    opacity: 1;  /* Firefox */
 }
 

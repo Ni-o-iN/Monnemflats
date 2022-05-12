@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     ;
 }
 
+:root {
+    --gap: 20px;
+}
 
 html,
 body {
@@ -27,32 +33,47 @@ header {
     color: black;
     font-size: 24px;
     width: 100%;
-    min-height: 20px;
+    padding-top: 20px;
     margin-bottom: 50px;
-    padding: 10px 0px;
    
     
 }
 
-main {
-    height: 95%;
-}
-
-
 nav ul {
     text-align: center;
     list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
+
+
 nav li {
+    margin-left: auto;
     display: inline-block;
+    padding-bottom: 10px;
 }
+
+nav li:nth-child(3) {
+    margin: 0;
+}   
+
+nav li:first-child(){
+    margin-left: 0;
+    margin-right: auto;
+}
+nav li:last-child{
+    margin-left: auto;
+    margin-right: 0;
+}
+
 
 nav a {
     text-decoration: none;
     color: inherit;
-    padding: 10px 10px 10px;
 }
+
 
 header nav a:hover {
     background-color: #efeded;
@@ -67,17 +88,6 @@ header nav a:hover {
 
 }
 
-.dropdown-button {
-    background-color: inherit;
-    font-family: "Open Sans", sans-serif;
-    font-size: inherit;
-    font-weight: inherit;
-    border: none;
-    margin-bottom: 5px;
-
-}
-
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -89,21 +99,12 @@ header nav a:hover {
 
 .dropdown-content a {
     display: block;
-    text-align: right;
 }
 
 
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.left{
-    float:left;
-}
-
-.right{
-    float: right;
 }
 
 footer {
