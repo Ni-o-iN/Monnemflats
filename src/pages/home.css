@@ -183,7 +183,7 @@ label {
     width: calc(50% - var(--gap));
 }
 
-.searchform {
+.searchinput {
     width: 100%;
     font-size: 16px;
     margin-bottom: 10px;
