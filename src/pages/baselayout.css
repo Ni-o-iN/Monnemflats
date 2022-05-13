@@ -31,7 +31,6 @@ header {
     font-size: 24px;
     width: 100%;
     padding-top: 10px;
-    margin-bottom: 50px;
     border: none;
    
     
@@ -69,6 +68,7 @@ nav a {
 
 
 
+
 .header-item:hover {
     background-color: #efeded;
 }
@@ -100,6 +100,12 @@ nav a {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+main{
+    width: 80%;
+    max-width: 1280px;
+    margin: 50px auto;
 }
 
 footer {
@@ -176,4 +182,14 @@ p + h1, p + h2, p + h3, p + h4, p + h5{
 
     margin-top: 1em;
 
+}
+
+a{
+    text-decoration: none;
+    color:#740000;
+}
+
+
+@media screen and (max-width:600px){
+    
 }
