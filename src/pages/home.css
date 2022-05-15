@@ -87,7 +87,7 @@ label {
 
 input[type=button],
 input[type=submit] {
-    width: calc(100% - var(--gap) + 2px);
+    width:100%;
     color: white;
     font-size: 29px;
     font-weight: 300;

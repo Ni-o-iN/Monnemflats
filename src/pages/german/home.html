@@ -37,7 +37,7 @@
                 <img class="logo center" src="../../images/logo/logo.png" width="50%">
                 <h1 class="center claim">Ihre Ferienwohnung in Mannheim</h1>
             </div>
-            <form class="row center flex" name="searchform" display: inline-flex onsubmit="validateForm()">
+            <form class="row center flex" name="searchform" action="search.html" method="get">
                 <div class="district" >
                     <label>Stadtteil: </label> <br/>
                     <input class="searchinput"  name="district" type="text" pattern="(^[A-Za-zÄäÖöÜüß]+([\s-]?\b[A-Za-zÄäÖöÜüß]+)*$)" 
@@ -47,7 +47,7 @@
                 
                 <div class="guests">
                     <label>Gäste: </label><br/>
-                    <input class="searchinput" name="guests" type="number" pattern="[0-9]+"placeholder="Wie viele Gäste sind Sie?"/>
+                    <input class="searchinput" name="guests" type="number" pattern="[1-9][0-9]*" min="1" placeholder="Wie viele Gäste sind Sie?"/>
                 </div>
                 <div class="date">
                     <label>Anreise: </label><br/>
@@ -71,7 +71,12 @@
                    <a href="privacy.html" class="footer-item">Datenschutz</a>
             </nav>
         </footer>
+
+        <script language="javascript" type="text/javascript" src="validation.js"></script>
+
+
             
     </body>
 
 </html>
+
