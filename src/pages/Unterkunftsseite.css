@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@charset "ISO-8859-1";
+
+
+.Haken{
+	color:#2A7F62;
+	
+}
+
+.flex{
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+   
+}
+
+.fle{
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left:80px;
+    
+   
+}
+.Angabe1{
+	 
+	
+	margin-top: 80px;
+	margin-left:450px;
+	width: 500px;
+	height:150px;
+	font-size:24px;
+	background-color:grey;
+}
+
+.Angabe1Inhalt{
+	padding-left:50px;
+	font-size:24px;
+	
+}
+.Angabe2{
+	margin-top: 50px;
+	margin-left: 80px;
+	
+	
+}
+.Bild{
+	margin-top: -300px;
+	margin-left: 60px;
+	
+	
+}
+.Beschreibung{
+	margin-top: 50px;
+	margin-left: 80px;
+}
+.Fettdruck, .Angabe2{
+	font-weight: bold;
+	
+}
+.knopf{
+	position:fixed;
+  	bottom:400px;
+	background-color: #2A7F62;
+	color: #FFFFFF;
+	border-color: #2A7F62;
+	text-align: center;
+	margin-left: 1040px;
+	height: 45px;
+	width: 130px;
+	font-size:23px;
+	font-family:'Open-Sans',sans-serif;
+	
+}
+
+
+.Kopf{
+	background-color: #740000;
+	color: #FFFFFF
+}
+
+#cal { 
+	position:fixed;
+    bottom:530px;
+    margin-left:990px;
+    font: 13px/1.5; 
+    font-family: 'Open Sans', sans-serif;
+    display:table; 
+    
+    
+   
+}
+#cal .tbheader { 
+    cursor:default; 
+    background: #740000; 
+    height: 34px; 
+    position: relative; 
+    color:#FFFFFF; 
+    font-weight:bold; 
+    text-shadow:0px -1px 0 #87260C; 
+}
+
+#cal .tbheader span { 
+    display:inline-block; 
+    line-height:34px; 
+}
+#cal .tbheader .hook { 
+    width: 9px; 
+    height: 28px; 
+    position: absolute; 
+   
+} 
+
+#cal .tbheader .button { 
+    width:24px; 
+    text-align:center; 
+    position:absolute; 
+} 
+#cal .tbheader .left.button { 
+    left:0; 
+  
+   
+} 
+#cal .tbheader .right.button { 
+    right:0; 
+  
+ 
+} 
+#cal .tbheader .button:hover { 
+	background:white;
+   
+}
+
+#cal .tbheader .month-year { 
+    letter-spacing: 1px; 
+    width: 100%; 
+  
+    text-align: center; 
+}
+
+#cal table { 
+    background:#fff; 
+    border-collapse:collapse; 
+} 
+#cal td { 
+    color:#000000; 
+    width:30px; 
+    height:30px; 
+    line-height:30px; 
+    text-align:center; 
+    cursor:default; 
+} 
+#cal #days td { 
+    height:26px; 
+    line-height: 26px; 
+    text-transform:uppercase; 
+    font-size:90%; 
+    border-top:1px solid #e6e6e6; 
+    color:#000000; 
+} 
+
+
+#cal #cal-frame td:not(.leer):hover { 
+    color:#FFFFFF; 
+    text-shadow: #6C1A07 0px -1px; 
+    background-color: #740000;
+  
+}
+
+#cal #cal-frame td span { 
+    font-size:80%; 
+    position:relative; 
+} 
+#cal #cal-frame td span:first-child { 
+    bottom:5px; 
+} 
+#cal #cal-frame td span:last-child { 
+    top:5px; 
+}
+#cal #cal-frame table.curr { 
+    float:left;      
+} 
+#cal #cal-frame table.temp { 
+    position:absolute; 
+}
