@@ -2,51 +2,53 @@ main{
     width: 100%;
 }
 
-.flex{
-    display: flex;
-    flex-flow: wrap;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
 .center{
     align-items: center;
     gap: 40px;
+    margin-left: 5%;
 }
 
 .center h1{
-    margin-bottom: 0;
+    margin-bottom: 0px;
+}
+
+.flex{
+    display: flex;
+    align-content: flex-start;
+    gap: 50px;
 }
 
 .resultbox{
     background-color: rgba(217, 211,  211, 0.3); /*0.3% von der Farbe*/
-    padding: 10px;
+    margin: auto;
+    width: 95%;
+    height: 220px;
+    flex-flow: column wrap;
+    justify-content: flex-end;
     font-size: 30px;
     font-weight: 500;
-}
-
-.pic{
-    justify-content: left;
-    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    row-gap: 0px;
+    align-items: flex-end;
 }
 
 .informations{
-    margin-left: 5%;
     font-size: 25px;
+    height: 80px;
+    margin-bottom: auto;
 }
 
-.space{
-    word-spacing: 1em;
+.informations p{
+    display: flex;
+}
+
+.informations p span{
+    width: 350px;
 }
 
 .button{
     background-color: #2A7F62;
     color: white;
     padding: 10px;
-    align-self: flex-end;
-}
-
-.wrap::after {
-    content: '\A';
-    white-space: pre;    
 }

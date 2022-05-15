@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-@charset "ISO-8859-1";
+
 
 
 .Haken{
@@ -23,6 +23,21 @@
     margin-left:80px;
     
    
+}
+.AustattungInhalt1{
+	font-size:16px;
+	font-weight: bold;
+	
+}
+.AustattungInhalt2{
+	font-size:16px;
+	padding-left:150px;
+	font-weight: bold;
+	
+}
+
+.Adresse, .AdresseInhalt{
+	margin-left:80px;
 }
 .Angabe1{
 	 
@@ -185,3 +200,5 @@
 #cal #cal-frame table.temp { 
     position:absolute; 
 }
+
+
