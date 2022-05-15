@@ -9,6 +9,15 @@ main{
     margin-bottom: 20px;
 }
 
+.center{
+    align-items: center;
+    gap: 40px;
+}
+
+.center h1{
+    margin-bottom: 0;
+}
+
 .resultbox{
     background-color: rgba(217, 211,  211, 0.3); /*0.3% von der Farbe*/
     padding: 10px;
@@ -22,10 +31,8 @@ main{
 }
 
 .informations{
-    white-space: nowrap;
     margin-left: 5%;
     font-size: 25px;
-    flex: 60%;
 }
 
 .space{
