@@ -51,13 +51,11 @@
                 </div>
                 <div class="date">
                     <label>Anreise: </label><br/>
-                    <input class="searchinput" name="arrival" type="text" pattern="(0[1-9]|[1-2][0-9]|3[0-2]).(0[1-9]|1[0-2]).(20(2[2-9]|[3-9][0-9]))" 
-                    placeholder="Wann wollen Sie ankommen?"/>
+                    <input class="searchinput" name="arrival" type="text" max="31.12.2099" placeholder="Wann wollen Sie ankommen?"/>
                 </div>
                 <div class= "date">
                     <label>Abreise: </label><br/>
-                    <input class="searchinput" name="departure" type="text"  pattern="(0[1-9]|[1-2][0-9]|3[0-2]).(0[1-9]|1[0-2]).(20(2[2-9]|[3-9][0-9]))" 
-                    placeholder="Wann wollen Sie abreisen?"/>
+                    <input class="searchinput" name="departure" type="text" max="31.12.2099" placeholder="Wann wollen Sie abreisen?"/>
                 </div>
                 <input type="submit" value="Suchen">
 
