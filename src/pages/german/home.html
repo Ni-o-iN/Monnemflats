@@ -40,20 +40,24 @@
             <form class="row center flex" name="searchform" display: inline-flex onsubmit="validateForm()">
                 <div class="district" >
                     <label>Stadtteil: </label> <br/>
-                    <input class="searchinput"  name="district" type="text" placeholder="Wo wollen Sie leben?"/>
+                    <input class="searchinput"  name="district" type="text" pattern="(^[A-Za-zÄäÖöÜüß]+([\s-]?\b[A-Za-zÄäÖöÜüß]+)*$)" 
+                    placeholder="Wo wollen Sie leben?"/>
+                    <p class="error"></p>
                 </div>
                 
                 <div class="guests">
                     <label>Gäste: </label><br/>
-                    <input class="searchinput" name="guests" type="number" placeholder="Wie viele Gäste sind Sie?"/>
+                    <input class="searchinput" name="guests" type="number" pattern="[0-9]+"placeholder="Wie viele Gäste sind Sie?"/>
                 </div>
                 <div class="date">
                     <label>Anreise: </label><br/>
-                    <input class="searchinput" name="arrival" type="text" placeholder="Wann wollen Sie ankommen?"/>
+                    <input class="searchinput" name="arrival" type="text" pattern="(0[1-9]|[1-2][0-9]|3[0-2]).(0[1-9]|1[0-2]).(20(2[2-9]|[3-9][0-9]))" 
+                    placeholder="Wann wollen Sie ankommen?"/>
                 </div>
                 <div class= "date">
                     <label>Abreise: </label><br/>
-                    <input class="searchinput" name="departure" type="text" placeholder="Wann wollen Sie abreisen?"/>
+                    <input class="searchinput" name="departure" type="text"  pattern="(0[1-9]|[1-2][0-9]|3[0-2]).(0[1-9]|1[0-2]).(20(2[2-9]|[3-9][0-9]))" 
+                    placeholder="Wann wollen Sie abreisen?"/>
                 </div>
                 <input type="submit" value="Suchen">
 

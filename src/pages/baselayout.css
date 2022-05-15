@@ -53,6 +53,8 @@ nav  {
     margin-right: auto;
 }
 
+
+
  header .logo:hover{
     background-color: #efeded;
 }
@@ -221,6 +223,26 @@ a{
 
 
 @media screen and (max-width:600px){
+    
+    main{
+        margin: auto;
+    }
+    
+    h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    h3{
+        font-size:20px;
+    }
+
+    h4{
+        font-size: 16px;
+    }
 
     .header-item{
         display: none;
