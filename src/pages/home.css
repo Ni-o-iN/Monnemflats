@@ -105,3 +105,11 @@ input::placeholder{
     opacity: 1;  /* Firefox */
 }
 
+@media screen  and (max-width:1000px) {
+
+    .district, .guests, .date{
+        width: 100%;
+    }
+    
+}
+
