@@ -16,7 +16,6 @@ inputs.forEach((input) =>
 
 dateInputs.forEach(input => 
 {
-    console.log("for each " + today);
     setMinDate(input);
     input.addEventListener('change', (event) => { checkDate(event.target)})
     input.addEventListener('focus', (event) => { changeToDate(event.target)});
@@ -25,10 +24,8 @@ dateInputs.forEach(input =>
 
 
 function setMinDate(input){
-    console.log("setMinDate: " + today);
-    input.min = today;
-    console.log(input.min);
 
+    input.min = today;
 }
 
 function formatDate(date){
@@ -129,7 +126,7 @@ function checkText(input){
             return;
         }
 
-        else if(value.match(/^[\W]/)){
+        else if(value.match(/^[\W_]/)){
             input.setCustomValidity("Die Eingabe darf nicht mit einem Sonderzeichen beginnen!");
             return;
         }
